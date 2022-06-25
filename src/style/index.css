@@ -114,7 +114,7 @@ code {
   margin: 0; 
 }
 
-#expect{
+.expect{
   font-size: 1.4em;
 }
 
@@ -152,6 +152,7 @@ code {
   padding: .5rem;
 }
 
+/* dark mode */
 .dark-mode{
   background: black;
   color: white;

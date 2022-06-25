@@ -11,6 +11,8 @@ function App() {
   const [throwError, setThrowError] = useState(false);
   const [darkMode, setDarkMode] = useState(false)
 
+  // this fetches all the data
+  // throws error 'failed to fetch' on error
   const fetchWeather = (count) => {
      fetch(`https://api.weatherapi.com/v1/forecast.json?key=7c705c2b62b543b98ea54922221606&q=${city}&days=3&aqi=no&alerts=no`)
        .then(res => {
@@ -35,7 +37,6 @@ function App() {
     <div className={`App ${!isEmpty && 'auto'} ${darkMode && 'dark-mode'}`}>
       <button onClick={() => setDarkMode(!darkMode)}
              className={`toggle-btn ${darkMode && 'dark-mode'}`}>
-
         {darkMode ? 'Dark Mode': 'Light Mode'}
       </button>
       <div className='input-container'>       
