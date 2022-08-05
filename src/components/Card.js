@@ -14,7 +14,7 @@ const Card = ({ city, country,time , averageTemp, expect, icon, wind, humidity, 
         <hr/>
         <div className='extra-info'>
           <h3>Wind: {wind} kph</h3>
-          <h3>Sumidity: {humidity}</h3>       
+          <h3>Humidity: {humidity}</h3>       
           <h3>Sunrise: {sunrise}</h3>
           <h3>Sunset: {sunset}</h3>
         </div>
